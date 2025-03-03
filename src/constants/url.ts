@@ -1,0 +1,1 @@
+export const pokeAPIEndpoint = "https://pokeapi.co/api/v2";
