@@ -6,9 +6,10 @@ export const pokemonTypeDefs = `#graphql
 
   type FetchPokemonsResponse {
     results: [PokemonListItem]
+    next: String
   }
 
   type Query {
-    fetchPokemons: FetchPokemonsResponse
+    fetchPokemons(next: String): FetchPokemonsResponse
   }
 `

@@ -3,3 +3,8 @@ export type PokemonListItem = {
   url: string;
 };
 
+export type FetchPokemonsResponse = {
+  results: PokemonListItem[];
+  next: string;
+};
+
