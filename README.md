@@ -1,6 +1,8 @@
 ```
-npm install
-npm run dev
+// 初回起動時のみ
+docker compose up --build
+
+docker compose up
 ```
 
 ```
