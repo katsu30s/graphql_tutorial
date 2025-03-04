@@ -6,5 +6,5 @@ docker compose up
 ```
 
 ```
-open http://localhost:4000
+open http://localhost:5000
 ```
