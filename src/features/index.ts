@@ -10,4 +10,7 @@ export const resolvers = {
     ...machineResolvers.Query,
     ...pokemonResolver.Query,
   },
+  Mutation: {
+    ...pokemonResolver.Mutation,
+  },
 };

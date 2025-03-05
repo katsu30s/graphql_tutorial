@@ -4,6 +4,16 @@ export const pokemonTypeDefs = `#graphql
     url: String
   }
 
+  type Pokemon {
+    id: Int
+    name: String
+    baseExperience: Int
+    height: Int
+    isDefault: Boolean
+    order: Int
+    weight: Int
+  }
+
   type FetchPokemonsResponse {
     results: [PokemonListItem]
     next: String
@@ -11,5 +21,9 @@ export const pokemonTypeDefs = `#graphql
 
   type Query {
     fetchPokemons(next: String): FetchPokemonsResponse
+  }
+
+  type Mutation {
+    createNewPokemon(name: String): Pokemon
   }
 `

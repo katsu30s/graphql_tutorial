@@ -1,5 +1,5 @@
 import { pokeAPIEndpoint } from '@/constants/url';
-import { type PokemonListItem, type FetchPokemonsResponse } from '@/features/pokemon/pokemonTypes';
+import { type PokemonListItem, type FetchPokemonsResponse, type Pokemon } from '@/features/pokemon/pokemonTypes';
 
 export const fetchPokemonsService = async (
   next?: string
@@ -18,4 +18,18 @@ export const fetchPokemonsService = async (
     results: pokemonList,
     next: data.next,
   };
-}
+};
+
+export const createNewPokemonService = async (
+  name: string
+): Pokemon => {
+  return {
+    name,
+    id: 9999,
+    baseExperience: 999,
+    height: 999,
+    isDefault: true,
+    order: 999,
+    weight: 999,
+  };
+};
